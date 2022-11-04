@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
 import Samsung1 from '../public/image 21Phone.png'
@@ -38,9 +37,7 @@ const Products = () => {
 
       <div className="grid grid-cols-5 gap-5">
         {arr.map((item) => (
-          <Link href={`/FullProduct/${item.id}`} key={item.id}>
-            <ProductCard name={item.name} image={item.img} />
-          </Link>
+          <ProductCard key={item.id} name={item.name} image={item.img} id={item.id} />
         ))}
       </div>
       <Pagination />

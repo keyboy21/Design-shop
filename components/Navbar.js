@@ -1,8 +1,11 @@
+import Link from 'next/link'
 const Navbar = () => {
   return (
     <nav className="flex justify-between">
       <div className="ml-16 py-5">
-        <span>LOGO</span>
+        <Link href="/">
+          <span>LOGO</span>
+        </Link>
       </div>
       <ul className="flex">
         <li className="flex items-center mr-10">

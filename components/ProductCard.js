@@ -1,6 +1,6 @@
 import Image from 'next/image'
-
-const ProductCard = ({ name, image }) => {
+import Link from 'next/link'
+const ProductCard = ({ name, image, id }) => {
   return (
     <div className="min-w-[192px] bg-white-for-admin p-3 rounded-xl">
       <div className="relative bg-ProductBackground flex justify-center py-4 rounded-md">
@@ -50,9 +50,10 @@ const ProductCard = ({ name, image }) => {
             </defs>
           </svg>
         </span>
-        <Image src={image} alt="Product" />
+        <Link href={`/FullProduct/${id}`}>
+          <Image src={image} alt="Product" />
+        </Link>
       </div>
-
       <div className="space-y-1 mt-[6px]">
         <p className="not-italic font-normal text-base leading-4 tracking-[-o.3px]">{name}</p>
         <p className="not-italic font-medium text-base lead-[18px]">7 300 000 сум </p>

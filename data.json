@@ -1,0 +1,52 @@
+[
+  {
+    "id": 2,
+    "name": "Смартфон Samsung G...",
+    "img": "./public/image 21Phone.png"
+  },
+  {
+    "id": 1,
+    "name": "Смартфон Apple iphon...",
+    "img": "../public/image 22Iphone.png"
+  },
+  {
+    "id": 3,
+    "name": "Наушники Apple Airpo...",
+    "img": "../public/image 23airp.png"
+  },
+  {
+    "id": 4,
+    "name": "Смартфон Apple iphon...",
+    "img": "../public/image 22Iphone.png"
+  },
+  {
+    "id": 5,
+    "name": "Samsung Galaxy Z Fold...",
+    "img": "../public/image 26Samsung.png"
+  },
+  {
+    "id": 6,
+    "name": "Смартфон Samsung G...",
+    "img": "../public/image 21Phone.png"
+  },
+  {
+    "id": 7,
+    "name": "Смартфон Samsung G...",
+    "img": "../public/image 21Phone.png"
+  },
+  {
+    "id": 8,
+    "name": "Наушники Apple Airpo...",
+    "img": "../public/image 23airp.png"
+  },
+  {
+    "id": 9,
+    "name": "Смартфон Apple iphon...",
+    "img": "../public/image 22Iphone.png"
+  },
+  {
+    "id": 10,
+    "name": "Samsung Galaxy Z Fold...",
+    "img": "../public/image 26Samsung.png"
+  }
+]
