@@ -1,6 +1,22 @@
+import Link from 'next/link'
 import ProductCard from './ProductCard'
 import Pagination from './Pagination'
-
+import Samsung1 from '../public/image 21Phone.png'
+import Samsung from '../public/image 26Samsung.png'
+import IPhone from '../public/image 22Iphone.png'
+import AirPods from '../public/image 23airp.png'
+const arr = [
+  { id: 2, name: 'Смартфон Samsung G...', img: Samsung1 },
+  { id: 1, name: 'Смартфон Apple iphon...', img: IPhone },
+  { id: 3, name: 'Наушники Apple Airpo...', img: AirPods },
+  { id: 4, name: 'Смартфон Apple iphon...', img: IPhone },
+  { id: 5, name: 'Samsung Galaxy Z Fold...', img: Samsung },
+  { id: 6, name: 'Смартфон Samsung G...', img: Samsung1 },
+  { id: 7, name: 'Смартфон Samsung G...', img: Samsung1 },
+  { id: 8, name: 'Наушники Apple Airpo...', img: AirPods },
+  { id: 9, name: 'Смартфон Apple iphon...', img: IPhone },
+  { id: 10, name: 'Samsung Galaxy Z Fold...', img: Samsung },
+]
 const Products = () => {
   return (
     <div className="min-w-[1097px] px-7 pt-5 mt-5 ml-5 mb-4 bg-Content rounded-md">
@@ -20,15 +36,12 @@ const Products = () => {
         <span className="font-semibold text-base leading-5 not-italic">Все товары (121)</span>
       </div>
 
-      <div className="grid grid-cols-4 gap-5">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+      <div className="grid grid-cols-5 gap-5">
+        {arr.map((item) => (
+          <Link href={`/FullProduct/${item.id}`} key={item.id}>
+            <ProductCard name={item.name} image={item.img} />
+          </Link>
+        ))}
       </div>
       <Pagination />
     </div>
