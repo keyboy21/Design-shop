@@ -6,7 +6,7 @@ import MainLayout from '../../components/MainLayout'
 const Full = () => {
   return (
     <MainLayout>
-      <div className="min-w-[1097px] px-7 pt-5 mt-5 ml-5 mb-4 bg-Content rounded-md">
+      <div className="min-w-[1097px] px-7 pt-5 pb-7 mt-5 ml-5 mb-4 bg-Content rounded-md">
         <div className="mb-5">
           <div className="not-italic text-[12px] mb-[30px] space-x-1">
             <span className="text-Notification font-normal  leading-[14px]">Заявки</span>
@@ -18,9 +18,11 @@ const Full = () => {
             <span className="text-Primarygreen font-medium  leading-[14px]">Смартфон Apple iPhone 11 128 Gb Slim Box черный</span>
           </div>
         </div>
+
         <div className="bg-white-for-admin relative rounded-2xl p-[30px]">
           <Image src={Cart} alt="Cart" style={{ position: 'absolute', right: 15, top: -20 }} />
           <h1 className="text-blue-for-admin text-[22px] leading-[26px]  font-semibold mb-7">Смартфон Apple iPhone 11 128 Gb Slim Box черный</h1>
+
           <div className="flex">
             <div className="bg-ProductBackground w-[480px] rounded-2xl">
               <div className="flex justify-center relative pt-14 pb-4">
@@ -73,10 +75,187 @@ const Full = () => {
                 <Image src={Phone} alt="Iphone" />
               </div>
             </div>
-            
-            <div>
 
+            <div className="flex flex-col pl-5 leading-5 not-italic">
+              <div className="mb-4">
+                <h2 className="font-normal text-base lead-[19px] text-Notification">Цена телефона</h2>
+                <span className="mt-2 font-semibold text-base">6 000 000 сум </span>
+                <hr className="text-ProductBackground mt-5" />
+
+                <div className="flex justify-between">
+                  <div>
+                    <h2 className="mt-5 font-normal text-base lead-[19px] text-Notification ">Общая цена (с наценкой)</h2>
+                    <span className="mt-2 font-semibold text-base ">7 300 000 сум </span>
+                  </div>
+                  <p className="flex items-end text-Notification text-sm">
+                    <span className="px-[6px] py-[2px] bg-Extra text-white-for-admin rounded-sm mr-[6px]"> от 2 435 000 сум</span>х3
+                  </p>
+                </div>
+              </div>
+
+              <div className="inline-flex rounded-md font-normal text-xs leading-4 text-Primarygreen" role="group">
+                <button type="button" className=" text-white-for-admin bg-Primarygreen py-[10px] px-10 rounded-l-lg border border-Primarygreen">
+                  3 мес
+                </button>
+                <button type="button" className="active:text-white-for-admin active:bg-Primarygreen py-[10px] px-10 border-t border-b border-Primarygreen">
+                  6 мес
+                </button>
+                <button type="button" className="active:text-white-for-admin active:bg-Primarygreen py-[10px] px-10 border-t border-b border-l border-Primarygreen">
+                  12 мес
+                </button>
+                <button type="button" className="active:text-white-for-admin active:bg-Primarygreen py-[10px] px-10 rounded-r-md border border-Primarygreen">
+                  24 мес
+                </button>
+              </div>
+
+              <div className="text-center mt-2 leading-5">
+                <p className="mb-5 text-base  font-normal">
+                  Наценка: <span className="font-semibold text-xl">5%</span>
+                </p>
+                <hr className="text-ProductBackground mt-5" />
+              </div>
+
+              <div className="leading-5">
+                <h2 className="mt-5 mb-2 font-normal text-base  text-Notification not-italic">Общие характеристики</h2>
+                <p className="not-italic font-normal text-base">
+                  Тип: моноблок (классический) <br /> Стандарт: 2G, 3G, 4G (LTE), 5G <br /> Операционная система: iOS 14
+                </p>
+              </div>
+
+              <div>
+                <a className="flex justify-between mt-5">
+                  <h2 className="not-italic font-semibold leading-5 text-base text-Primarygreen">Показать все</h2>
+                  <i className="fa-solid fa-angle-right text-Primarygreen"></i>
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div className="mt-7">
+            <h3 className="mb-5 not-italic font-normal text-base leading-5 text-Primarygreen">Акции</h3>
+            <div>
+              <div className="flex justify-between mb-5">
+                <div className="flex">
+                  <span className="top-5 space-y-2 mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 36 28" fill="none">
+                      <path d="M0 6C0 2.68629 2.68629 0 6 0H30C33.3137 0 36 2.68629 36 6V22C36 25.3137 33.3137 28 30 28H6C2.68629 28 0 25.3137 0 22V6Z" fill="#F39DBD" />
+                      <g clipPath="url(#clip0_7908_49236)">
+                        <path d="M18.3626 12.36V13.1644C18.3626 13.4199 18.4137 13.6343 18.5144 13.8013C18.6533 14.0317 18.8813 14.1638 19.1402 14.1638C19.3939 14.1638 19.646 14.0403 19.8894 13.7969L22.5463 11.1399C23.1297 10.5565 23.1297 9.6073 22.5463 9.02393L19.8894 6.36694C19.646 6.12341 19.3939 6 19.1402 6C18.7531 6 18.3626 6.30908 18.3626 6.99939V7.72998C14.5904 7.95276 11.4676 10.8477 11.0035 14.6378C10.9775 14.8495 11.0979 15.0521 11.2962 15.1306C11.3524 15.1528 11.4109 15.1636 11.4686 15.1636C11.6148 15.1636 11.7567 15.0951 11.847 14.9717C13.0919 13.2708 15.0907 12.2552 17.1937 12.2552C17.5833 12.2552 17.9752 12.2904 18.3626 12.36Z" fill="#E83274" />
+                        <path d="M24.6954 12.8689C24.497 12.7903 24.2707 12.8557 24.1446 13.028C22.8998 14.7288 20.901 15.7443 18.798 15.7443C18.4084 15.7443 18.0165 15.7091 17.6291 15.6395V14.8351C17.6291 14.1448 17.2384 13.8357 16.8515 13.8357C16.5978 13.8357 16.3457 13.9592 16.1022 14.2028L13.4452 16.8596C12.862 17.443 12.862 18.3922 13.4454 18.9757L16.1022 21.6326C16.3457 21.8761 16.5978 21.9995 16.8515 21.9995C17.2384 21.9995 17.6291 21.6905 17.6291 21.0002V20.2696C21.4014 20.0468 24.5241 17.1519 24.9882 13.3618C25.0142 13.15 24.8938 12.9474 24.6954 12.8689Z" fill="#E83274" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_7908_49236">
+                          <rect width="16" height="16" fill="white" transform="translate(10 6)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div className="font-normal text-base leading-5">
+                    <p>Обменяй свой старый айфон и получи скидку на новый</p>
+                    <p className=" text-Notification mt-[10px]"> - 400 000 сум</p>
+                  </div>
+                </div>
+                <div>
+                  <input type="checkbox" className="w-6 h-6 outline-none border border-Notification checked:text-Primarygreen checked:outline-none rounded-lg" />
+                </div>
+              </div>
+
+              <hr className="text-ProductBackground mb-5" />
+
+              <div className="flex justify-between mb-5">
+                <div className="flex">
+                  <span className="top-5 space-y-2 mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 36 28" fill="none">
+                      <path d="M0 6C0 2.68629 2.68629 0 6 0H30C33.3137 0 36 2.68629 36 6V22C36 25.3137 33.3137 28 30 28H6C2.68629 28 0 25.3137 0 22V6Z" fill="#A2AEDB" />
+                      <g clipPath="url(#clip0_26_203)">
+                        <path d="M19.875 14.4688V22H23.625C24.4004 22 25.0625 21.3692 25.0625 20.5938V14.4688H19.875Z" fill="#3855B3" />
+                        <path d="M10.9375 14.4688V20.5938C10.9375 21.3692 11.5683 22 12.3438 22H16.125V14.4688H10.9375Z" fill="#3855B3" />
+                        <path
+                          d="M24.5938 9.75H22.6755C22.973 9.35706 23.1562 8.87337 23.1562 8.34375C23.1562 7.05147 22.1048 6 20.8125 6C19.1768 6 18.7032 7.17828 18 8.96259C17.2968 7.17828 16.8232 6 15.1875 6C13.8952 6 12.8438 7.05147 12.8438 8.34375C12.8438 8.87337 13.027 9.35706 13.3245 9.75H11.4062C10.6308 9.75 10 10.3808 10 11.1562V12.125C10 12.9004 10.6308 13.5312 11.4062 13.5312H16.125V9.75H15.1875C14.4121 9.75 13.7812 9.11919 13.7812 8.34375C13.7812 7.56831 14.4121 6.9375 15.1875 6.9375C16.1483 6.9375 16.4216 7.51381 17.1399 9.33619C17.1899 9.46344 17.2524 9.61441 17.3063 9.75H17.0625C17.0625 16.7401 17.0625 15.0068 17.0625 22H18.9375C18.9375 11.0276 18.9375 12.7975 18.9375 9.75H18.6937C18.7477 9.61438 18.8101 9.46344 18.8602 9.33619C19.5784 7.51381 19.8517 6.9375 20.8125 6.9375C21.5879 6.9375 22.2188 7.56831 22.2188 8.34375C22.2188 9.11919 21.5879 9.75 20.8125 9.75H19.875V13.5312H24.5938C25.3692 13.5312 26 12.9004 26 12.125V11.1562C26 10.3808 25.3692 9.75 24.5938 9.75Z"
+                          fill="#3855B3"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_26_203">
+                          <rect width="16" height="16" fill="white" transform="translate(10 6)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div className="font-normal text-base leading-5">
+                    <p>Наушники в подарок</p>
+                    <p className=" mt-[10px] text-Notification">Apple EarPods</p>
+                  </div>
+                </div>
+                <div>
+                  <input type="checkbox" className="w-6 h-6 outline-none border border-Notification checked:text-Primarygreen checked:outline-none rounded-lg" />
+                </div>
+              </div>
+
+              <hr className="text-ProductBackground mb-5" />
+
+              <div className="flex justify-between mb-5">
+                <div className="flex">
+                  <span className="top-5 space-y-2 mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 36 28" fill="none">
+                      <path d="M0 6C0 2.68629 2.68629 0 6 0H30C33.3137 0 36 2.68629 36 6V22C36 25.3137 33.3137 28 30 28H6C2.68629 28 0 25.3137 0 22V6Z" fill="#FFBD95" />
+                      <g clipPath="url(#clip0_26_215)">
+                        <path
+                          d="M24.9361 14.2073C24.8718 14.0756 24.8718 13.9245 24.9361 13.7928L25.5329 12.5721C25.8651 11.8923 25.6019 11.0822 24.9336 10.7276L23.7333 10.0907C23.6038 10.022 23.515 9.89979 23.4896 9.75545L23.2549 8.41705C23.1242 7.67186 22.4349 7.17112 21.6859 7.27708L20.3405 7.4674C20.1953 7.4879 20.0517 7.44121 19.9463 7.3393L18.9698 6.39456C18.426 5.8685 17.5741 5.86847 17.0304 6.39456L16.0537 7.3394C15.9484 7.44133 15.8048 7.48793 15.6596 7.46749L14.3142 7.27718C13.565 7.17115 12.8759 7.67196 12.7452 8.41714L12.5104 9.75548C12.4851 9.89985 12.3963 10.0221 12.2668 10.0908L11.0665 10.7277C10.3982 11.0822 10.135 11.8924 10.4672 12.5722L11.0639 13.7929C11.1283 13.9246 11.1283 14.0757 11.0639 14.2074L10.4672 15.4281C10.135 16.1078 10.3982 16.918 11.0665 17.2726L12.2668 17.9094C12.3963 17.9781 12.4851 18.1004 12.5104 18.2447L12.7452 19.5831C12.8642 20.2615 13.4459 20.7372 14.1144 20.7372C14.1802 20.7372 14.2471 20.7325 14.3142 20.723L15.6596 20.5327C15.8047 20.5121 15.9484 20.5589 16.0538 20.6608L17.0304 21.6056C17.3023 21.8686 17.6511 22.0001 18 22.0001C18.3489 22.0001 18.6979 21.8686 18.9697 21.6056L19.9463 20.6608C20.0517 20.5589 20.1953 20.5124 20.3405 20.5327L21.6859 20.723C22.4352 20.829 23.1242 20.3283 23.2549 19.5831L23.4897 18.2447C23.515 18.1004 23.6038 17.9782 23.7333 17.9094L24.9336 17.2726C25.6019 16.918 25.8651 16.1078 25.5329 15.4281L24.9361 14.2073ZM16.1544 9.84741C17.0873 9.84741 17.8462 10.6064 17.8462 11.5393C17.8462 12.4721 17.0873 13.2311 16.1544 13.2311C15.2215 13.2311 14.4626 12.4721 14.4626 11.5393C14.4626 10.6064 15.2215 9.84741 16.1544 9.84741ZM15.2811 17.3714C15.1911 17.4615 15.073 17.5066 14.9549 17.5066C14.8368 17.5066 14.7187 17.4616 14.6286 17.3714C14.4485 17.1913 14.4485 16.8991 14.6286 16.7189L20.7189 10.6287C20.8991 10.4485 21.1912 10.4485 21.3714 10.6287C21.5516 10.8088 21.5516 11.101 21.3714 11.2812L15.2811 17.3714ZM19.8456 18.1527C18.9128 18.1527 18.1538 17.3938 18.1538 16.4609C18.1538 15.528 18.9128 14.7691 19.8456 14.7691C20.7785 14.7691 21.5375 15.528 21.5375 16.4609C21.5375 17.3938 20.7785 18.1527 19.8456 18.1527Z"
+                          fill="#FF6422"
+                        />
+                        <path d="M19.8457 15.6914C19.4217 15.6914 19.0767 16.0364 19.0767 16.4604C19.0767 16.8844 19.4216 17.2294 19.8457 17.2294C20.2697 17.2294 20.6147 16.8844 20.6147 16.4604C20.6147 16.0364 20.2697 15.6914 19.8457 15.6914Z" fill="#FF6422" />
+                        <path d="M16.1542 10.7695C15.7302 10.7695 15.3853 11.1145 15.3853 11.5385C15.3853 11.9626 15.7302 12.3076 16.1542 12.3076C16.5783 12.3076 16.9233 11.9626 16.9233 11.5385C16.9232 11.1145 16.5783 10.7695 16.1542 10.7695Z" fill="#FF6422" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_26_215">
+                          <rect width="16" height="16" fill="white" transform="translate(10 6)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div className="font-normal text-base leading-5">
+                    <p>Скидка 20% на смартфоны</p>
+                    <p className=" mt-[10px] text-Notification"> -10 000 сум</p>
+                  </div>
+                </div>
+                <div>
+                  <input type="checkbox" className="w-6 h-6 outline-none border border-Notification checked:text-Primarygreen checked:outline-none rounded-lg" />
+                </div>
+              </div>
+              <hr className="text-ProductBackground mb-5" />
+
+              <div className="flex justify-between mb-5">
+                <div className="flex">
+                  <span className="top-5 space-y-2 mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 36 28" fill="none">
+                      <path d="M0 6C0 2.68629 2.68629 0 6 0H30C33.3137 0 36 2.68629 36 6V22C36 25.3137 33.3137 28 30 28H6C2.68629 28 0 25.3137 0 22V6Z" fill="#FFBD95" />
+                      <g clipPath="url(#clip0_26_215)">
+                        <path
+                          d="M24.9361 14.2073C24.8718 14.0756 24.8718 13.9245 24.9361 13.7928L25.5329 12.5721C25.8651 11.8923 25.6019 11.0822 24.9336 10.7276L23.7333 10.0907C23.6038 10.022 23.515 9.89979 23.4896 9.75545L23.2549 8.41705C23.1242 7.67186 22.4349 7.17112 21.6859 7.27708L20.3405 7.4674C20.1953 7.4879 20.0517 7.44121 19.9463 7.3393L18.9698 6.39456C18.426 5.8685 17.5741 5.86847 17.0304 6.39456L16.0537 7.3394C15.9484 7.44133 15.8048 7.48793 15.6596 7.46749L14.3142 7.27718C13.565 7.17115 12.8759 7.67196 12.7452 8.41714L12.5104 9.75548C12.4851 9.89985 12.3963 10.0221 12.2668 10.0908L11.0665 10.7277C10.3982 11.0822 10.135 11.8924 10.4672 12.5722L11.0639 13.7929C11.1283 13.9246 11.1283 14.0757 11.0639 14.2074L10.4672 15.4281C10.135 16.1078 10.3982 16.918 11.0665 17.2726L12.2668 17.9094C12.3963 17.9781 12.4851 18.1004 12.5104 18.2447L12.7452 19.5831C12.8642 20.2615 13.4459 20.7372 14.1144 20.7372C14.1802 20.7372 14.2471 20.7325 14.3142 20.723L15.6596 20.5327C15.8047 20.5121 15.9484 20.5589 16.0538 20.6608L17.0304 21.6056C17.3023 21.8686 17.6511 22.0001 18 22.0001C18.3489 22.0001 18.6979 21.8686 18.9697 21.6056L19.9463 20.6608C20.0517 20.5589 20.1953 20.5124 20.3405 20.5327L21.6859 20.723C22.4352 20.829 23.1242 20.3283 23.2549 19.5831L23.4897 18.2447C23.515 18.1004 23.6038 17.9782 23.7333 17.9094L24.9336 17.2726C25.6019 16.918 25.8651 16.1078 25.5329 15.4281L24.9361 14.2073ZM16.1544 9.84741C17.0873 9.84741 17.8462 10.6064 17.8462 11.5393C17.8462 12.4721 17.0873 13.2311 16.1544 13.2311C15.2215 13.2311 14.4626 12.4721 14.4626 11.5393C14.4626 10.6064 15.2215 9.84741 16.1544 9.84741ZM15.2811 17.3714C15.1911 17.4615 15.073 17.5066 14.9549 17.5066C14.8368 17.5066 14.7187 17.4616 14.6286 17.3714C14.4485 17.1913 14.4485 16.8991 14.6286 16.7189L20.7189 10.6287C20.8991 10.4485 21.1912 10.4485 21.3714 10.6287C21.5516 10.8088 21.5516 11.101 21.3714 11.2812L15.2811 17.3714ZM19.8456 18.1527C18.9128 18.1527 18.1538 17.3938 18.1538 16.4609C18.1538 15.528 18.9128 14.7691 19.8456 14.7691C20.7785 14.7691 21.5375 15.528 21.5375 16.4609C21.5375 17.3938 20.7785 18.1527 19.8456 18.1527Z"
+                          fill="#FF6422"
+                        />
+                        <path d="M19.8457 15.6914C19.4217 15.6914 19.0767 16.0364 19.0767 16.4604C19.0767 16.8844 19.4216 17.2294 19.8457 17.2294C20.2697 17.2294 20.6147 16.8844 20.6147 16.4604C20.6147 16.0364 20.2697 15.6914 19.8457 15.6914Z" fill="#FF6422" />
+                        <path d="M16.1542 10.7695C15.7302 10.7695 15.3853 11.1145 15.3853 11.5385C15.3853 11.9626 15.7302 12.3076 16.1542 12.3076C16.5783 12.3076 16.9233 11.9626 16.9233 11.5385C16.9232 11.1145 16.5783 10.7695 16.1542 10.7695Z" fill="#FF6422" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_26_215">
+                          <rect width="16" height="16" fill="white" transform="translate(10 6)" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <div className="font-normal text-base leading-5">
+                    <p>Скидка на айфоны</p>
+                    <p className=" mt-[10px] text-Notification"> -10 000 сум</p>
+                  </div>
+                </div>
+                <div>
+                  <input type="checkbox" className="w-6 h-6 outline-none border border-Notification checked:text-Primarygreen checked:outline-none rounded-lg" />
+                </div>
+              </div>
+            </div>
+            <button className='bg-Primarygreen rounded-3xl w-full py-4 text-white-for-admin'>Добавить в корзину</button>
           </div>
         </div>
       </div>
