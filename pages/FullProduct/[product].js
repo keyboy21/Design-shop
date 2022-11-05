@@ -74,7 +74,7 @@ const Full = () => {
                 </span>
                 <Image src={Phone} alt="Iphone" />
               </div>
-              {/* <div> */}
+
               <ul className="flex space-x-3 justify-center items-end marker:text-Notification ">
                 <li className="list-disc marker:text-blue-for-admin"></li>
                 <li className="list-disc active:marker:text-blue-for-admin"></li>
@@ -82,9 +82,7 @@ const Full = () => {
                 <li className="list-disc active:marker:text-blue-for-admin"></li>
                 <li className="list-disc active:marker:text-blue-for-admin"></li>
                 <li className="list-disc active:marker:text-blue-for-admin"></li>
-
               </ul>
-              {/* </div> */}
             </div>
 
             <div className="flex flex-col pl-5 leading-5 not-italic">
