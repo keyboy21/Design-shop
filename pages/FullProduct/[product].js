@@ -24,7 +24,7 @@ const Full = () => {
           <h1 className="text-blue-for-admin text-[22px] leading-[26px]  font-semibold mb-7">Смартфон Apple iPhone 11 128 Gb Slim Box черный</h1>
 
           <div className="flex">
-            <div className="bg-ProductBackground w-[480px] rounded-2xl">
+            <div className="bg-ProductBackground w-[480px] h-[380px] rounded-2xl">
               <div className="flex justify-center relative pt-14 pb-4">
                 <span className="absolute left-5 top-5 space-y-2">
                   <svg xmlns="http://www.w3.org/2000/svg" width="36" height="28" viewBox="0 0 36 28" fill="none">
@@ -74,6 +74,17 @@ const Full = () => {
                 </span>
                 <Image src={Phone} alt="Iphone" />
               </div>
+              {/* <div> */}
+              <ul className="flex space-x-3 justify-center items-end marker:text-Notification ">
+                <li className="list-disc marker:text-blue-for-admin"></li>
+                <li className="list-disc active:marker:text-blue-for-admin"></li>
+                <li className="list-disc active:marker:text-blue-for-admin"></li>
+                <li className="list-disc active:marker:text-blue-for-admin"></li>
+                <li className="list-disc active:marker:text-blue-for-admin"></li>
+                <li className="list-disc active:marker:text-blue-for-admin"></li>
+
+              </ul>
+              {/* </div> */}
             </div>
 
             <div className="flex flex-col pl-5 leading-5 not-italic">
@@ -117,7 +128,7 @@ const Full = () => {
 
               <div className="leading-5">
                 <h2 className="mt-5 mb-2 font-normal text-base  text-Notification not-italic">Общие характеристики</h2>
-                <p className="not-italic font-normal text-base">
+                <p className="not-italic font-normal text-base leading-5">
                   Тип: моноблок (классический) <br /> Стандарт: 2G, 3G, 4G (LTE), 5G <br /> Операционная система: iOS 14
                 </p>
               </div>
@@ -255,7 +266,7 @@ const Full = () => {
                 </div>
               </div>
             </div>
-            <button className='bg-Primarygreen rounded-3xl w-full py-4 text-white-for-admin'>Добавить в корзину</button>
+            <button className="bg-Primarygreen rounded-3xl w-full py-4 text-white-for-admin">Добавить в корзину</button>
           </div>
         </div>
       </div>
